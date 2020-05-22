@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "outDir": "./dist",
+        "strict": true,
+        "module": "CommonJS",
+        "noImplicitAny": false,
+        "jsx": "react",
+        "allowJs": true,
+        "lib": ["es5", "es6", "es2017", "dom", "scripthost", "es2015.promise"],
+        "types": ["node", "react", "react-dom"],
+        "moduleResolution": "node",
+        "strictNullChecks": false,
+        "skipLibCheck": true,
+        "noUnusedParameters": true,
+        "plugins": [],
+        "paths": {
+            "components/*": [
+              "./src/components/*"
+            ],
+          }
+    }
+}

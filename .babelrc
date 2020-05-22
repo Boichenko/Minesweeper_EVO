@@ -1,0 +1,26 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": 3
+      }
+    ]
+  ],
+  "plugins": [
+    "lodash",
+    "@babel/plugin-syntax-dynamic-import",
+    [
+      "@babel/plugin-transform-typescript",
+      {
+        "isTSX": true
+      }
+    ],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    "@babel/plugin-transform-runtime",
+    "react-hot-loader/babel"
+  ]
+}
